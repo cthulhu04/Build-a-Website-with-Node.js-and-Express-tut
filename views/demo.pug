@@ -1,0 +1,13 @@
+extends layout
+
+
+
+block layout-content
+    div.demo
+        - var option = ['hey', 'goodbey'] ;
+        h1 #{ intro ? option[0] : option[1] }
+        p friend
+        img(src="./food.jpg" class="img-demo")
+        div.button__section
+            a(href="/")
+                button.demo__button button
